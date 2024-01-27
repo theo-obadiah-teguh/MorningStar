@@ -7,6 +7,6 @@ The data set was provided by the Faculty of Business and Economics at the Univer
 ## The Project
 The task was to create a lightweight XML scraper that can be run locally on your everyday PC or laptop that could handle medium to large scale datasets with exceptional running time and performance. Afterwards, we would like to construct a MySQL database to warehouse specific subsets of the data required for the project. This will allow streamlined access for the researches to query and analyze the data. The Morningstar `DataWarehouse` was downloaded locally via a secure FTP connection.
 
-The size of the dataset is 7.25GB in compressed `.xml.zip` format, or approximately 35.55GB in `.xml` format. The program was run on a 2020 M1 Macbook Air with 512GB SSD and 8GB RAM. The final achieved average scraping speed was 13MB/s, operating within local machine specifications, without the support of virtual machines. The target database was in the form of the following simple Entity Relationship (ER) Diagram.
+The size of the dataset is 7.25GB in compressed `.xml.zip` format, or approximately 35.55GB in `.xml` format. The program was run on a 2020 M1 Macbook Air with 512GB SSD and 8GB RAM. The final achieved average scraping speed was 13MB/s, operating within local machine specifications, without the support of virtual machines. Our objective was to create the target database which can be explained in the form of the following Entity Relationship (ER) Diagram.
 
 ## The Objective
