@@ -1,5 +1,5 @@
 # MorningStar
-A portable Extensible Markup Language (XML) scraper designed specifically to handle Morningstar `DataWarehouse` packages. Utilizes Simple API for XML (SAX).
+A portable Extensible Markup Language (XML) scraper designed specifically to handle Morningstar `DataWarehouse` packages. Utilizes Simple API for XML (SAX Parsing).
 
 ## Acknowledgments
 The data set was provided by the Faculty of Business and Economics at the University of Hong Kong. It was part of a research programme supervised by [Prof. Yang Liu](https://www.hkubs.hku.hk/people/yang-liu/) and orchestrated by [Ms. Yaoyuan Zhang](https://www.hkubs.hku.hk/people/yaoyuan-zhang/). Additionally, I received invaluable assistance from [Mr. Zhenxian Zheng](https://github.com/zhengzhenxian) who kindly helped me through the stages of this project.  
