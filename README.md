@@ -16,6 +16,6 @@ The size of the dataset is 7.25GB in compressed `.xml.zip` format, or approximat
 1. Make sure you have Git installed on your device.
 1. Open your terminal, choose your desired directory and clone the repository by executing `git clone https://github.com/theo-obadiah-teguh/MorningStar.git`.
 1. Enter your GitHub username and token (if applicable).
-1. Open `main.py` in the Build folder and make sure the `source_path` variable is consistent with the data's location on your device.
+1. Open `main.py` in the "Build" folder and make sure the `source_path` variable is consistent with the data's location on your device.
 1. Run `chmod u+x ./exec.sh` to give execution permissions to the main file.
 1. Execute `./exec.sh` to run the program. The Shell script has automated all the processes in a convenient manner.
