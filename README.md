@@ -13,7 +13,7 @@ The task was to create a lightweight XML scraper that can be run locally on your
 The size of the dataset is 7.25GB in compressed `.xml.zip` format, or approximately 35.55GB in `.xml` format. The program was run on a 2020 M1 Macbook Air with 512GB SSD and 8GB RAM. The final achieved average scraping speed was 13MB/s, operating within local machine specifications, without the support of virtual machines.
 
 ## Compilation and Execution Instructions:
-1. Make sure you have Git installed on your device.
+1. Make sure you have Git and Python installed on your device (as well as a few freely available Python libraries).
 1. Open your terminal, choose your desired directory and clone the repository by executing `git clone https://github.com/theo-obadiah-teguh/MorningStar.git`.
 1. Enter your GitHub username and token (if applicable).
 1. Open `main.py` in the "Build" folder and make sure the `source_path` variable is consistent with the data's location on your device.
