@@ -1,14 +1,14 @@
 /* 
-This script sets up our new database called MorningStar
-It also includes the necessary Data Definition Language (DDL)
-It then transfers parsed data from .txt to our newly setup database
+This script sets up our new database called MorningStar.
+It also includes the necessary Data Definition Language (DDL).
+It then transfers parsed data from .txt to our newly setup database.
 */
 
 -- Initialize the new database
-CREATE DATABASE MorningStar_test;
+CREATE DATABASE MorningStarTest;
 
 -- Access that new database
-USE MorningStar_test;
+USE MorningStarTest;
 
 -- SQL Data Definition Language (DDL) for the PortfolioSummary entity
 CREATE TABLE IF NOT EXISTS PortfolioSummaryX (
@@ -69,25 +69,3 @@ CREATE TABLE IF NOT EXISTS HoldingDetailX (
     FirstBoughtDate VARCHAR(20),
     LessThanOneYearBond VARCHAR(20)
 );
-
--- Set permission load data
-SET GLOBAL local_infile = TRUE;
-
--- Moves the contents of PSX to the PorfolioSummaryX table
-LOAD DATA LOCAL INFILE '/Users/theoobadiahteguh/Desktop/Testing/TextFiles/PSX.txt'
-INTO TABLE PortfolioSummaryX 
-FIELDS TERMINATED BY ';'  
-LINES TERMINATED BY '\n';
-
--- Moves the contents of HDX to the HoldingDetailsX table
-LOAD DATA LOCAL INFILE '/Users/theoobadiahteguh/Desktop/Testing/TextFiles/HDX.txt'
-INTO TABLE HoldingDetailX 
-FIELDS TERMINATED BY ';'  
-LINES TERMINATED BY '\n';
-
--- Change _Date columns' datatype after all tables are ready
-UPDATE PortfolioSummaryX 
-SET _Date = STR_TO_DATE(_Date, '%Y-%m-%d');
-
-UPDATE HoldingDetailX 
-SET _Date = STR_TO_DATE(_Date, '%Y-%m-%d');
