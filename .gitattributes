@@ -1,1 +1,5 @@
+# Displays the percentage of SQL code
 *.sql linguist-detectable=true
+
+# Makes sure it is formatted correctly
+*.sql linguist-language=sql
