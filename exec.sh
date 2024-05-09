@@ -67,7 +67,7 @@ sleep 1
 
 # Transfer data from text files to MySQL
 echo -e "${BBlue}PHASE 3) Transferring files..."
-mysql --local-infile=1 -h $RDS_HOST -P 3306 --user=$RDS_USER --password=$RDS_PASS --ssl-ca=$RDS_CA --ssl-mode=VERIFY_IDENTITY -e "source pop_db.sql" 2> error.txt
+mysql --local-infile=1 -h $RDS_HOST -P 3306 --user=$RDS_USER --password=$RDS_PASS --ssl-ca=$RDS_CA --ssl-mode=VERIFY_IDENTITY -e "source pop_db.sql" 2>/dev/null
 sleep 1
 
 echo -e "${BIGreen}PHASE 4) Process completed."
