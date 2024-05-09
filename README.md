@@ -26,5 +26,9 @@ In the future, better hardware could facilitate speed and performance of this da
 1. Open `main.py` in the "Build" folder and make sure the `source_path` variable is consistent with the data's location on your device.
 1. Run `chmod +x exec.sh` to give execution permissions to the main file.
 1. Acquire and download an AWS CA certificate.
-1. Fill in the `.env` template with your credentials.
+1. Create a `.env` file with the following variables:
+   - `RDS_HOST` : The host link of the database provided by AWS.
+   - `RDS_USER` : The username coressponding to the database.
+   - `RDS_PASS` : The password coressponding to the username.
+   - `RDS_CA``  : The path to the `global-bundle.pem` CA certificate.
 1. Execute `./exec.sh` to run the program.
