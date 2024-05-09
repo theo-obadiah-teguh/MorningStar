@@ -1,6 +1,5 @@
 # MorningStar
-
-A portable Extensible Markup Language (XML) scraper designed specifically to handle Morningstar `DataWarehouse` packages. Utilizes Simple API for XML (SAX Parsing).
+An ETL pipeline designed specifically to handle Morningstar d`DataWarehouse` packages. Utilizes Python 'iterparse' ElementTree, which is similar to SAX Parsing for extraction and transformation, and AWS RDS MySQL as the load target.
 
 ## Acknowledgments
 
