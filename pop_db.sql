@@ -3,7 +3,7 @@ This script parses data from our text files and inputs it to our database.
 */
 
 -- Set permission load data
-SET GLOBAL local_infile = TRUE;
+-- SET GLOBAL local_infile = TRUE;
 USE MorningStarTest;
 
 -- Moves the contents of PSX to the PorfolioSummaryX table

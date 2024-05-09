@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python3
 
 # This is our main script. It utilizes our custom made functions and some other general libraries.
 # The program first takes a path for our dataset.
