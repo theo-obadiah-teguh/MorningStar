@@ -30,5 +30,5 @@ In the future, better hardware could facilitate speed and performance of this da
    - `RDS_HOST` : The host link of the database provided by AWS.
    - `RDS_USER` : The username coressponding to the database.
    - `RDS_PASS` : The password coressponding to the username.
-   - `RDS_CA``  : The path to the `global-bundle.pem` CA certificate.
+   - `RDS_CA`   : The path to the `global-bundle.pem` CA certificate.
 1. Execute `./exec.sh` to run the program.
