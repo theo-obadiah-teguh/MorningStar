@@ -12,6 +12,14 @@ The task was to create a lightweight XML scraper that can be run locally on your
 
 The size of the dataset is 7.25GB in compressed `.xml.zip` format, or approximately 35.55GB in `.xml` format. The program was run on a 2020 M1 Macbook Air with 512GB SSD and 8GB RAM. The final achieved average scraping speed was 13MB/s, operating within local machine specifications, without the support of virtual machines.
 
+## New Updates
+I decided to add AWS connectivity to the entire build. Now, the data will instead be pipelined to a fresh AWS RDS MySQL server. This was not part of the original implementation; however, it makes more sense if we had a huge team with multiple developers. 
+
+## Room for Improvement
+Although the majority of the script runs in very reasonable time, the caveat of this cloud implementation may actually be the AWS db.t3.micro hardware. As it only has 1 GiB of RAM, it becomes a bottleneck during the execution of `pop_db.sql` which populates the database with a `LOAD DATA LOCAL INFILE` command. Performance drops compared to the original local implementation. 
+
+In the future, better hardware could facilitate speed and performance of this data pipeline. Additionally, the whole data transformation or scraping process could be run from a faster AWS EC2 instance.
+
 ## Compilation and Execution Instructions:
 1. Make sure you have Git and Python installed on your device (as well as a few freely available Python libraries).
 1. Open your terminal, choose your desired directory and clone the repository by executing `git clone https://github.com/theo-obadiah-teguh/MorningStar.git`.
