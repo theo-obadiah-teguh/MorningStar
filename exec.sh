@@ -26,8 +26,7 @@ if grep -q "ERROR 1045" error.txt; then
     clear
     rm error.txt
     echo -e "${BIRed}Incorrect credentials. Please try again."
-    sleep 1
-    exit
+    exit 1
 fi
 
 rm error.txt 
