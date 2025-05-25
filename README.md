@@ -3,7 +3,7 @@ An ETL pipeline designed specifically to handle Morningstar `DataWarehouse` pack
 
 ## Acknowledgments
 
-The data set was provided by the Faculty of Business and Economics at the University of Hong Kong. It was part of a research programme supervised by [Prof. Yang Liu](https://www.hkubs.hku.hk/people/yang-liu/) and orchestrated by [Ms. Yaoyuan Zhang](https://www.hkubs.hku.hk/people/yaoyuan-zhang/). Additionally, I received invaluable assistance from [Mr. Zhenxian Zheng](https://github.com/zhengzhenxian) who kindly helped me through the stages of this project.  
+The data set was provided by the Faculty of Business and Economics at the University of Hong Kong. It was part of a research programme supervised by [Prof. Yang Liu](https://www.hkubs.hku.hk/people/yang-liu/) and orchestrated by [Dr. Yaoyuan Zhang](https://www.hkubs.hku.hk/people/yaoyuan-zhang/). Additionally, I received invaluable assistance from [Dr. Zhenxian Zheng](https://github.com/zhengzhenxian) who kindly helped me through the stages of this project.  
 
 ## The Project
 
